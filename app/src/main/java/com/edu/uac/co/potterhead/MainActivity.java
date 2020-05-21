@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<Character>> call, Response<List<Character>> response) {
 
                 characterList = response.body();
-                Log.d("MainActivity", characterList.toString());
+                Log.d("MainActivity", characterList.size()+"");
             }
 
             @Override
