@@ -1,6 +1,6 @@
 package com.edu.uac.co.potterhead.Model;
 
-public class Characters {
+public class Character {
     private String name;
     private String house;
     private String patronus;
@@ -139,7 +139,7 @@ public class Characters {
 
     @Override
     public String toString() {
-        return "Characters{" +
+        return "Character{" +
                 "name='" + name + '\'' +
                 ", house='" + house + '\'' +
                 ", patronus='" + patronus + '\'' +

@@ -1,13 +1,12 @@
 package com.edu.uac.co.potterhead;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import com.edu.uac.co.potterhead.Interface.PotterHeadApi;
-import com.edu.uac.co.potterhead.Model.SortingHat;
+import com.edu.uac.co.potterhead.Model.Character;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    List<Character> characterList;
+    private List<Character> characterList;
     //String sortedHouse;
 
     @Override
