@@ -1,6 +1,7 @@
 package com.edu.uac.co.potterhead;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Charac
 
     private Context context;
     private List<Character> characterList;
+    private String house, patronous, species, bloodStatus, role, school, alias, wand, boggart, animagus;
+    private Boolean deathEater, dumbArmy, fenixOrder, magicMin;
 
     public RecyclerAdapter(Context context, List<Character> characterList) {
         this.context = context;
@@ -43,32 +46,37 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Charac
 
         holder.tvName.setText(character.getName());
 
-        if (!(character.getHouse() == "")) {
+        if (character.getHouse().isEmpty()) {
+            holder.tvHouse.setVisibility(View.GONE);
+            Log.d("VISIBILITY", holder.tvHouse.getVisibility()+"");
+        } else {
+            holder.tvHouse.setVisibility(View.VISIBLE);
             holder.tvHouse.setText(character.getHouse());
+            Log.d("VISIBILITY", holder.tvHouse.getVisibility()+"");
         }
-
+        //holder.tvHouse.setText(character.getHouse());
         holder.tvPatronous.setText(character.getPatronus());
         holder.tvSpecies.setText(character.getBloodStatus());
         holder.tvSpecies.setText(character.getSpecies());
         holder.tvBloodStatus.setText(character.getBloodStatus());
         holder.tvRole.setText(character.getRole());
         holder.tvSchool.setText(character.getSchool());
-        if(character.isDeathEater() == true){
+        if (character.isDeathEater() == true) {
             holder.tvDeathEater.setText("true");
         } else {
             holder.tvDeathEater.setText("false");
         }
-        if(character.isDumboldoresArmy() == true){
+        if (character.isDumboldoresArmy() == true) {
             holder.tvDumbArmy.setText("true");
         } else {
             holder.tvDumbArmy.setText("false");
         }
-        if(character.isOrderOfThePhoenix() == true){
+        if (character.isOrderOfThePhoenix() == true) {
             holder.tvOrderFenix.setText("true");
         } else {
             holder.tvOrderFenix.setText("false");
         }
-        if(character.isMinistryOfMagic() == true){
+        if (character.isMinistryOfMagic() == true) {
             holder.tvMinMagic.setText("true");
         } else {
             holder.tvMinMagic.setText("false");
@@ -77,6 +85,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Charac
         holder.tvWand.setText(character.getWand());
         holder.tvBoggart.setText(character.getBoggart());
         holder.tvAnimagus.setText(character.getAnimagus());
+
     }
 
     @Override
