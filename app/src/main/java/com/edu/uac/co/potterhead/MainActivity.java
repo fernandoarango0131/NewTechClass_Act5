@@ -2,63 +2,28 @@ package com.edu.uac.co.potterhead;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-
-import com.edu.uac.co.potterhead.Interface.PotterHeadApi;
-import com.edu.uac.co.potterhead.Model.Character;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<Character> characterList;
-    //String sortedHouse;
+    Button CharBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        characterList = new ArrayList<>();
-        //sortedHouse = new String();
+        CharBtn = findViewById(R.id.charButton);
 
-        PotterHeadApi apiInterface = ApiClient.getClient().create(PotterHeadApi.class);
-
-        Call<List<Character>> call = apiInterface.getCharacters();
-        //Call<String> call = apiInterface.getSortingHat();
-
-        call.enqueue(new Callback<List<Character>>() {
-            /*@Override
-            public void onResponse(Call<String> call, Response<String> response) {
-                sortedHouse = response.body();
-                Log.d("MainActivity", sortedHouse);
-            }
-
+        CharBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFailure(Call<String> call, Throwable t) {
-                Log.d("MainActivity", t.toString());
-            }*/
-
-            @Override
-            public void onResponse(Call<List<Character>> call, Response<List<Character>> response) {
-
-                characterList = response.body();
-                Log.d("MainActivity", characterList.size()+"");
-            }
-
-            @Override
-            public void onFailure(Call<List<Character>> call, Throwable t) {
-
-                Log.d("MainActivity", t.toString());
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, CharactersActivity.class);
+                startActivity(i);
             }
         });
-
-
     }
 }

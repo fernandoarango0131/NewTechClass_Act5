@@ -17,6 +17,26 @@ public class Character {
     private String boggart;
     private String animagus;
 
+    public Character(String name, String house, String patronus, String species, String bloodStatus, String role,
+                     String school, boolean deathEater, boolean dumboldoresArmy, boolean orderOfThePhoenix,
+                     boolean ministryOfMagic, String alias, String wand, String boggart, String animagus) {
+        this.name = name;
+        this.house = house;
+        this.patronus = patronus;
+        this.species = species;
+        this.bloodStatus = bloodStatus;
+        this.role = role;
+        this.school = school;
+        this.deathEater = deathEater;
+        this.dumboldoresArmy = dumboldoresArmy;
+        this.orderOfThePhoenix = orderOfThePhoenix;
+        this.ministryOfMagic = ministryOfMagic;
+        this.alias = alias;
+        this.wand = wand;
+        this.boggart = boggart;
+        this.animagus = animagus;
+    }
+
     public String getName() {
         return name;
     }
