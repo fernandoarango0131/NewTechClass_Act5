@@ -24,6 +24,8 @@
                 android:id="@+id/nameLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Name: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -32,6 +34,8 @@
                 android:id="@+id/houseLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="House: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -40,6 +44,8 @@
                 android:id="@+id/patronousLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Patronous: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -48,6 +54,8 @@
                 android:id="@+id/speciesLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Species: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -56,6 +64,8 @@
                 android:id="@+id/bloodStatusLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Blood Status: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -63,7 +73,10 @@
             <TextView
                 android:id="@+id/roleLabel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Role: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -71,8 +84,10 @@
             <TextView
                 android:id="@+id/schoolLabel"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="50dp"
                 android:gravity="center_vertical"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="School: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -81,6 +96,8 @@
                 android:id="@+id/deathEaterLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Death Eater: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -89,6 +106,8 @@
                 android:id="@+id/dumbArmyLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Dumboldores Army: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -97,6 +116,8 @@
                 android:id="@+id/orderFenixLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Order of the Fenix: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -105,6 +126,8 @@
                 android:id="@+id/minMagicLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Ministry of Magic: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -113,6 +136,8 @@
                 android:id="@+id/aliasLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Alias: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -121,6 +146,8 @@
                 android:id="@+id/wandLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Wand: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -129,6 +156,8 @@
                 android:id="@+id/boggartLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Boggart: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -137,6 +166,8 @@
                 android:id="@+id/animagusLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="Animagus: "
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -152,6 +183,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -159,6 +192,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -166,6 +201,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -173,6 +210,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -180,19 +219,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/roleTV"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|center_horizontal"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/schoolTV"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -200,6 +246,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -207,6 +255,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -214,6 +264,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -221,6 +273,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -228,6 +282,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -235,6 +291,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -242,6 +300,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
             <TextView
@@ -249,6 +309,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_horizontal"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:textSize="17sp" />
 
         </LinearLayout>

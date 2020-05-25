@@ -9,7 +9,7 @@ public class Character {
     private String role;
     private String school;
     private boolean deathEater;
-    private boolean dumboldoresArmy;
+    private boolean dumbledoresArmy;
     private boolean orderOfThePhoenix;
     private boolean ministryOfMagic;
     private String alias;
@@ -18,7 +18,7 @@ public class Character {
     private String animagus;
 
     public Character(String name, String house, String patronus, String species, String bloodStatus, String role,
-                     String school, boolean deathEater, boolean dumboldoresArmy, boolean orderOfThePhoenix,
+                     String school, boolean deathEater, boolean dumbledoresArmy, boolean orderOfThePhoenix,
                      boolean ministryOfMagic, String alias, String wand, String boggart, String animagus) {
         this.name = name;
         this.house = house;
@@ -28,7 +28,7 @@ public class Character {
         this.role = role;
         this.school = school;
         this.deathEater = deathEater;
-        this.dumboldoresArmy = dumboldoresArmy;
+        this.dumbledoresArmy = dumbledoresArmy;
         this.orderOfThePhoenix = orderOfThePhoenix;
         this.ministryOfMagic = ministryOfMagic;
         this.alias = alias;
@@ -101,12 +101,12 @@ public class Character {
         this.deathEater = deathEater;
     }
 
-    public boolean isDumboldoresArmy() {
-        return dumboldoresArmy;
+    public boolean isDumbledoresArmy() {
+        return dumbledoresArmy;
     }
 
-    public void setDumboldoresArmy(boolean dumboldoresArmy) {
-        this.dumboldoresArmy = dumboldoresArmy;
+    public void setDumbledoresArmy(boolean dumbledoresArmy) {
+        this.dumbledoresArmy = dumbledoresArmy;
     }
 
     public boolean isOrderOfThePhoenix() {
@@ -168,7 +168,7 @@ public class Character {
                 ", role='" + role + '\'' +
                 ", school='" + school + '\'' +
                 ", deathEater=" + deathEater +
-                ", dumboldoresArmy=" + dumboldoresArmy +
+                ", dumbledoresArmy=" + dumbledoresArmy   +
                 ", orderOfThePhoenix=" + orderOfThePhoenix +
                 ", ministryOfMagic=" + ministryOfMagic +
                 ", alias='" + alias + '\'' +
